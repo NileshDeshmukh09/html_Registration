@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Javacript Validation</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label>UserName</label>
+                <input type="text" name="" id="username" placeholder="Enter Your FullName" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" name="" id="email" placeholder="Enter Your Email"  autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Phone Number</label>
+                <input type="number" name="" id="phone" placeholder="Enter Your Phone Number"  autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" name="" id="password" placeholder="Enter Your Password"  autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>confirm Password</label>
+                <input type="password" name="" id="cpassword" placeholder="Enter Your Password Again"   autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <input type="submit" value="Submit" class="btn" name="">
+
+
+        </form>
+
+
+        
+    </div>
+
+    <script>
+
+        let form = document.getElementById('form')
+        let username = document.getElementById('username')
+        let email = document.getElementById('email')
+        let phone = document.getElementById('phone')
+        let password = document.getElementById('password')
+        let cpassword = document.getElementById('cpassword')
+
+        // Add Event
+
+        form.addEventListener('submit')
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
